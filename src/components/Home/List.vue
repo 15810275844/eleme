@@ -1,7 +1,7 @@
 <template>
 	<div id="list">
 		<h3 class="text-l">推荐商家</h3>
-		<div class="store flex bj-white"  v-for="(item,index) in [1,2,3,4,4,4,4,4,4,4,4,4]" :key="index">
+		<div class="store flex bj-white"  v-for="(item,index) in list" :key="index">
 			<div class="l">
 				<div class="img">
 					<img src="https://fuss10.elemecdn.com/b/b1/0c6a9919098436d2018521e0f36a7png.png?imageMogr/format/webp/" alt="" class="img-block">
@@ -47,7 +47,8 @@ import Star from "../star/star.vue";
 export default {
 	components:{
 		'm-star':Star
-	}
+	},
+	props:['list']
 }
 </script>
 
