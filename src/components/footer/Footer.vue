@@ -25,7 +25,6 @@
 export default {
 	data () {
 		return {
-			msg:'我是底部'
 		}
 	}
 }
@@ -43,6 +42,7 @@ export default {
 		left:0;		
 		width:100%;
 		background:#fff;
+		box-shadow: 0 -0.02rem 0.04rem rgba(0,0,0,.1);
 	}
 	i{
 		display:block;

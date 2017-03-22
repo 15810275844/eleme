@@ -7,13 +7,16 @@ import Mint from 'mint-ui';
 import 'mint-ui/lib/style.css';
 Vue.use(Mint);
 
+
+
 // mint ui 部分组件引用
-import { Swipe, SwipeItem } from 'mint-ui';
+import { Swipe, SwipeItem ,Loadmore } from 'mint-ui';
 
 //自定义CSS
 import './commons/less/style.less';
 
 
+Vue.component(Loadmore.name, Loadmore);
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
 

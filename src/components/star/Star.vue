@@ -26,7 +26,7 @@ export default {
 	props:['grade'],
 	computed: {
 		gradeFn:function(){
-			return Number(this.grade*10).toFixed(2) + '%';
+			return Number(this.grade*20).toFixed(2) + '%';
 		}
 	}
 }
@@ -38,13 +38,12 @@ export default {
 	}
 	#star{
 		position:relative;
-
+		height: 0.24rem;
+		line-height: 0.24rem;
 	}
 	i{
 		font-size:0.24rem;
 		color:#ddd;
-		height:0.24rem;
-		line-height:0.24rem;
 	}
 	.fill{
 		position:absolute;
@@ -54,7 +53,7 @@ export default {
 		top:0;
 	}
 	.fill i{
-		color:red;
+		color:#ffaa0c;
 		left:0;
 		top:0;
 	}
