@@ -19,7 +19,7 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json'], //自动补全后缀 improt
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),

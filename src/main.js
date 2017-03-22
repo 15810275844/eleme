@@ -1,8 +1,21 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+
+//mint 组件库
+import Mint from 'mint-ui';
+import 'mint-ui/lib/style.css';
+Vue.use(Mint);
+
+// mint ui 部分组件引用
+import { Swipe, SwipeItem } from 'mint-ui';
+
+//自定义CSS
+import './commons/less/style.less';
+
+
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
 
 Vue.config.productionTip = false
 
