@@ -17,7 +17,7 @@ module.exports = {
     // publicPath: process.env.NODE_ENV === 'production'
     //   ? config.build.assetsPublicPath
     //   : config.dev.assetsPublicPath
-    publicPath:'/'
+    publicPath:'./'
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'], //自动补全后缀 improt
