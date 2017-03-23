@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <!-- <keep-alive> -->
+      <router-view></router-view>
+    <!-- </keep-alive> -->
     <m-footer></m-footer>
   </div>
 </template>
@@ -11,6 +13,11 @@ export default {
   name: 'app',
   components: {
     'm-footer':footer
+  },
+  watch:{
+    $route(to){
+      
+    }
   }
 }
 </script>

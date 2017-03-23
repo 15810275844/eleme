@@ -1,7 +1,7 @@
 <template>
 	<div id="list">
-		<h3 class="text-l">推荐商家</h3>
-		<div class="store flex bj-white"  v-for="(item,index) in list" :key="index">
+		<h3 class="text-l border-tb">推荐商家</h3>
+		<div class="store flex bj-white border-b"  v-for="(item,index) in list" :key="index">
 			<div class="l">
 				<div class="img">
 					<img src="https://fuss10.elemecdn.com/b/b1/0c6a9919098436d2018521e0f36a7png.png?imageMogr/format/webp/" alt="" class="img-block">
@@ -17,8 +17,8 @@
 					</div>
 				</div>
 				<div class="star flex color-666">
-					<div class="flex">
-						<m-star :grade="'4.6'"></m-star>
+					<div class="flex" >
+						<m-star :grade="'4.6'" class=" "></m-star>
 						<span class="grade">4.6</span>
 						<span class="market">月销售25</span>
 					</div>
@@ -57,8 +57,6 @@ export default {
 		line-height: 0.68rem;
 	    font-weight: 600;
 	    background-color: #fff;
-	    border-top: 1px solid #eee;
-	    border-bottom: 1px solid #eee;
 	    font-size: 0.3rem;
 	    padding-left: 0.3rem;
 	}
@@ -119,8 +117,9 @@ export default {
 	    border-color: rgb(221, 221, 221);
 	}
 	.star{
-		line-height: 24px;
+		line-height: .24rem;
 		margin-top:0.2rem;
+		height: .24rem;
 		justify-content: space-between;
 	}
 	.star .grade{
@@ -165,6 +164,7 @@ export default {
 	.btm div:last-child span:last-child{
 		color: #2395ff;
 	}
-
-
+	.border-b:after{
+		top: -1px;
+	}
 </style>

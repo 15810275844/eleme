@@ -21,17 +21,17 @@ export default {
 	},
 	methods:{
 		onInfinite() {
-			setTimeout(() => {
-				const temp = [];
-				for (let i = this.list.length + 1; i <= this.list.length + 5; i++) {
-					temp.push(i);
-				}
-				this.list = this.list.concat(temp);
-				this.$refs.infiniteLoading.$emit('$InfiniteLoading:loaded');
-			}, 1000);
+			// alert()
+			const temp = [];
+			for (let i = this.list.length + 1; i <= this.list.length + 5; i++) {
+				temp.push(i);
+			}
+			this.list = this.list.concat(temp);
+			this.$refs.infiniteLoading.$emit('$InfiniteLoading:loaded');
 	    }
 	},
 	mounted () {
+		// alert(1)
 	},
 	components: {
 		'm-header':Header,

@@ -1,6 +1,57 @@
-body,html{
-	background: #f4f4f4;
+.border-b,.border-t,.border-l,.border-r,.border,.border-tb{
+	position: relative;
 }
+.border-b:after,.border-t:after,.border-l:after,.border-r:after,.border:after,.border-tb:after{
+	content: "";
+    pointer-events: none; /* 防止点击触发 */
+    box-sizing: border-box;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    left: 0;
+    top: 0;
+    border:1px solid #eee;
+    transform-origin: 0 0;
+}
+.border-tb:after{
+	border-left: 0;
+	border-right: 0;
+}
+.border-t:after{
+	border:0;
+	border-top: 1px solid #eee;
+}
+.border-b:after{
+	border:0;
+	border-bottom: 1px solid #eee;
+}
+.border-l:after{
+	border:0;
+	border-left: 1px solid #eee;
+}
+.border-r:after{
+	border:0;
+	border-right: 1px solid #eee;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.border-b:after,.border-t:after,.border-l:after,.border-r:after,.border:after,.border-tb:after{
+		transform:scale(0.5);
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+	.border-b:after,.border-t:after,.border-l:after,.border-r:after,.border:after,.border-tb:after{
+		transform: scale(0.3333);
+	}
+}
+
+body,html{
+	background: #efefef;
+}
+
+
+/*body,html{
+	background: #f4f4f4;
+}*/
 .ellipsis-1 {
 	overflow: hidden;
 	white-space: nowrap;

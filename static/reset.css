@@ -66,40 +66,7 @@ td,th {
     display: flex;
     display: -webkit-flex;
 }
-.border,
-.border-b {
-  position: relative;
-}
-.border-b:after {
-  pointer-events: none;
-  width: 200%;
-  height: 200%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  content: "";
-  -webkit-transform: scale(0.5);
-  -webkit-transform-origin: 0 0;
-  transform: scale(0.5);
-  transform-origin: 0 0;
-  border-bottom: 1px solid #b2b2b2;
-}
-.border:after {
-  pointer-events: none;
-  width: 200%;
-  height: 200%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  content: "";
-  -webkit-transform: scale(0.5);
-  -webkit-transform-origin: 0 0;
-  transform: scale(0.5);
-  transform-origin: 0 0;
-  border: 1px solid #b2b2b2;
-}
 
 input,button,select,textarea{outline:none}
 ::-webkit-scrollbar { display: none; }
+
