@@ -1,6 +1,6 @@
 <template>
 	<div id="list">
-		
+		<!-- <h3 class="text-l border-tb">推荐商家</h3> -->
 		<div class="store flex bj-white border-b"  v-for="(item,index) in list" :key="index">
 			<div class="l">
 				<div class="img">
@@ -53,13 +53,7 @@ export default {
 </script>
 
 <style scoped>
-	h3.text-l{
-		line-height: 0.68rem;
-	    font-weight: 600;
-	    background-color: #fff;
-	    font-size: 0.3rem;
-	    padding-left: 0.3rem;
-	}
+	
 	.l{
 		position: relative;
 	    padding: .3rem .2rem;

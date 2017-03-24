@@ -1,11 +1,11 @@
 <template>
 	<header>
 		<div class="top">
-			<router-link to="home" tag="div" class="location ">
+			<div class="location" @click="showAddressOpt">
 				<i class="icon iconfont icon-msnui-pos"></i>
 				<h1 class="ellipsis-1">朝阳区大屯路金泉家园</h1>
 				<i class="icon iconfont icon-wodedingdan18"></i>
-			</router-link>
+			</div>
 			<div class="weather flex">
 				<div class="tpt">
 					<p>19°</p>
@@ -31,6 +31,11 @@
 export default {
 	data () {
 		return {
+		}
+	},
+	methods:{
+		showAddressOpt () {
+			this.$store.commit('showAddressPage');
 		}
 	}
 }
