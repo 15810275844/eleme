@@ -1,3 +1,14 @@
+// 1像素边框
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.border-b:after,.border-t:after,.border-l:after,.border-r:after,.border:after,.border-tb:after{
+		transform:scale(0.5);
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+	.border-b:after,.border-t:after,.border-l:after,.border-r:after,.border:after,.border-tb:after{
+		transform: scale(0.3333);
+	}
+}
 .border-b,.border-t,.border-l,.border-r,.border,.border-tb{
 	position: relative;
 }
@@ -33,25 +44,20 @@
 	border:0;
 	border-right: 1px solid #eee;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2) {
-	.border-b:after,.border-t:after,.border-l:after,.border-r:after,.border:after,.border-tb:after{
-		transform:scale(0.5);
-	}
-}
-@media screen and (-webkit-min-device-pixel-ratio: 3) {
-	.border-b:after,.border-t:after,.border-l:after,.border-r:after,.border:after,.border-tb:after{
-		transform: scale(0.3333);
-	}
-}
+
+// 1像素边框 end
 
 body,html{
-	background: #efefef;
-}
-
-
-/*body,html{
+	font-family: Helvetica Neue,Tahoma,Arial,PingFangSC-Regular,Hiragino Sans GB,Microsoft Yahei,sans-serif;
+	-webkit-font-smoothing: antialiased;  //这个属性可以使页面上的字体抗锯齿,使用后字体看起来会更清晰舒服。
+  	-moz-osx-font-smoothing: grayscale;
 	background: #f4f4f4;
-}*/
+  	text-align: center;
+  	font-size:0.24rem;
+}
+.bj-main{
+	background: #0096ff;
+}
 .ellipsis-1 {
 	overflow: hidden;
 	white-space: nowrap;
@@ -88,4 +94,7 @@ body,html{
 }
 .color-666{
 	color:#666;
+}
+.overflow{
+	overflow: hidden;
 }
