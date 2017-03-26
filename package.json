@@ -6,9 +6,13 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "start": "supervisor api/index.js"
   },
   "dependencies": {
+    "axios": "^0.15.3",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
     "mint-ui": "^2.2.1",
     "vue": "^2.2.2",
     "vue-infinite-loading": "^2.0.3",

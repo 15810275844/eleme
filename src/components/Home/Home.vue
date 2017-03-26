@@ -13,6 +13,7 @@ import Header from "./Header.vue";
 import Swiper from "./Swiper.vue";
 import List from "../list/List.vue";
 import InfiniteLoading from 'vue-infinite-loading';
+
 export default {
 	name:'Home',
 	data () {
@@ -31,9 +32,18 @@ export default {
 				this.list = this.list.concat(temp);
 				this.$refs.infiniteLoading.$emit('$InfiniteLoading:loaded');
 			}, 1000);
-	    }
+	    },
+		aaa () {
+			this.$http.get('/api/home/list').then((res)=>{
+				var data = res.data;
+				console.log(data)
+			}).catch((err)=>{
+				console.log(err)
+			});
+		}
 	},
 	mounted () {
+		this.aaa();
 	},
 	computed:{
 		addressPage(){
