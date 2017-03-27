@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
-    "start": "supervisor api/index.js"
+    "start": "node api/index.js",
+    "db": "data/index.js "
   },
   "dependencies": {
     "axios": "^0.15.3",
