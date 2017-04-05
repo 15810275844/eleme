@@ -1,8 +1,10 @@
 <template>
-	<header>
-		<i class="icon iconfont icon-jiantou" @click="back"></i>
-		<h1 class="ellipsis-1">{{msg}}</h1>
-	</header>
+    <div :class="{active:fixed}" >
+        <header >
+            <i class="icon iconfont icon-jiantou" @click="back" ></i>
+            <h1 class="ellipsis-1">{{msg}}</h1>
+        </header>
+    </div>
 </template>
 
 <script>
@@ -11,9 +13,9 @@
 	组建定义名称：m-header
 	使用方法
 		<m-header :msg="'标题名称'" :back="'后退或者前进的步数'"></m-header>
-		back:(可以传后退步数,也可以传父自一定返回函数) 
+		back:(可以传后退步数,也可以传父自一定返回函数)
 
-		
+
 
 */
 export default {
@@ -40,8 +42,14 @@ export default {
 		toBack:{
 			type:String,
 			default:"-1"
-		}
-	}
+		},
+        fixed:{
+            default:false
+        }
+	},
+    mounted(){
+
+    }
 }
 </script>
 
@@ -73,4 +81,15 @@ export default {
 			padding-left: 0.1rem;
 		}
 	}
+    .active{
+        header{
+            position:fixed;
+        }
+        &:after{
+            content:"";
+            display:block;
+            height:.88rem;
+            background:none;
+        }
+    }
 </style>

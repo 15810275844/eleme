@@ -1,10 +1,11 @@
 <template>
-	<div ref="profile" class="overflow">
+	<div ref="profile" class="overflow" >
 		<m-header></m-header>
 		<m-swiper></m-swiper>
 		<h3 class="text-l border-tb">推荐商家</h3>
 		<m-list :list="list"></m-list>
 		<infinite-loading :on-infinite="onInfinite" ref="infiniteLoading" ></infinite-loading>
+        <div class="upwrad border" v-upward @click="upwrad"></div>
 	</div>
 </template>
 
@@ -40,10 +41,13 @@ export default {
 			}).catch((err)=>{
 				console.log(err)
 			});
-		}
+		},
+        upwrad (){
+            document.body.scrollTop = 0 ;
+        }
 	},
 	mounted () {
-		this.aaa();
+
 	},
 	computed:{
 		addressPage(){
@@ -75,4 +79,5 @@ export default {
 	    font-size: 0.3rem;
 	    padding-left: 0.3rem;
 	}
+
 </style>
