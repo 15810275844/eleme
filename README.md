@@ -1,6 +1,9 @@
-# tack-out
+# vue仿饿了么项目
 
-> 仿饿了么
+> 用vue-cli 创建的项目架子
+> 用到了 vue2.0 + vuex + vue-router + axios + vue-infinite-loading + mint-ui + ES6
+
+> 预览地址: www.zhaoxm.top/eleme
 
 ## Build Setup
 

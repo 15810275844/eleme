@@ -13,8 +13,6 @@
   "dependencies": {
     "axios": "^0.15.3",
     "better-scroll": "^0.1.15",
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
     "mint-ui": "^2.2.1",
     "vue": "^2.2.2",
     "vue-infinite-loading": "^2.0.3",
@@ -22,6 +20,7 @@
     "vuex": "^2.2.1"
   },
   "devDependencies": {
+    "body-parser": "^1.17.1",
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
